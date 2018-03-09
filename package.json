@@ -1,0 +1,29 @@
+{
+  "name": "cognizant",
+  "version": "0.1.0",
+  "description": "A simple cli with a mindfulness bell to remember to take a breath and perhaps give your eyes a rest from the screen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnmcguin/cognizant.git"
+  },
+  "keywords": [
+    "awareness",
+    "mindfulness",
+    "break",
+    "break time"
+  ],
+  "author": "John McGuin <johnmcguin88@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnmcguin/cognizant/issues"
+  },
+  "homepage": "https://github.com/johnmcguin/cognizant#readme",
+  "preferGlobal": true,
+  "bin": {
+    "cognizant": "index.js"
+  }
+}
