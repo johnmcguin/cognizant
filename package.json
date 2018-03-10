@@ -25,5 +25,10 @@
   "preferGlobal": true,
   "bin": {
     "cognizant": "index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "progress": "^2.0.0",
+    "yargs": "^11.0.0"
   }
 }
