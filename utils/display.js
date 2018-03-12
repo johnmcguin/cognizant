@@ -2,10 +2,11 @@
 const { readFile } = require('fs');
 const chalk = require('chalk');
 const log = console.log;
+const asciiFile = require('path').resolve(__dirname, '../cognizant.txt');
 module.exports = { displayArt };
 
 function displayArt() {
-    readFile('./cognizant.txt', 'ascii', (err, results) => {
+    readFile(asciiFile, 'ascii', (err, results) => {
         if (err) log(err);
         log('\n', '\n', '\n', '\n');
         log(chalk.cyanBright(results));

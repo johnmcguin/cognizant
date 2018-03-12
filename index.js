@@ -3,6 +3,7 @@
 const { exec } = require('child_process');
 const { displayArt } = require('./utils/display');
 const { showProgress } = require('./utils/progress');
+const soundFile = require('path').resolve(__dirname, './assets/singing-bowl.wav');
 const argv = require('./utils/yargs');
 let milliseconds = argv.n * 60000;
 ///////////////////////
@@ -17,6 +18,6 @@ function cognizant(ms) {
 }
 
 function playBell(ms) {
-    exec('afplay ./assets/singing-bowl.wav');
+    exec(`afplay ${soundFile}`);
     showProgress(ms);
 }
