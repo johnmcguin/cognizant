@@ -2,7 +2,9 @@
 const { readFile } = require('fs');
 const chalk = require('chalk');
 const log = console.log;
-const asciiFile = require('path').resolve(__dirname, '../cognizant.txt');
+// fs.readFile(path.join(__dirname,"helpers","test.txt"), 'utf8',function (err,data
+const asciiFile = require('path').join(__dirname, '../cognizant.txt');
+// const asciiFile = require('path').resolve(__dirname, '../cognizant.txt');
 module.exports = { displayArt };
 
 function displayArt() {

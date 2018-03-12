@@ -3,7 +3,8 @@
 const { exec } = require('child_process');
 const { displayArt } = require('./utils/display');
 const { showProgress } = require('./utils/progress');
-const soundFile = require('path').resolve(__dirname, './assets/singing-bowl.wav');
+const soundFile = require('path').join(__dirname, '/assets/singing-bowl.wav');
+// const soundFile = require('path').resolve(__dirname, './assets/singing-bowl.wav');
 const argv = require('./utils/yargs');
 let milliseconds = argv.n * 60000;
 ///////////////////////
